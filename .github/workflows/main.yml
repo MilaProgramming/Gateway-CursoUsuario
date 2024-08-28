@@ -26,7 +26,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/gateway-microservice:latest 
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/gateway-microservice:latest .
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
